@@ -1,0 +1,96 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--metadato es el tipo de informacion asociada a los datos, me permite usar simbolos como la ñ o el peso, simbolos raros -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--se adapta a un celular, el 1.0 hace que no se me distorsione la imagen -->
+    <title>El rincón del café</title> <!--me permite identificar a la pagina-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!--como relaciono con mi pagina de estilos, se llama a medida que se ejecuta-->
+</head>
+<body>
+    <header> <!--¿Cual es la diferencia entre head y header? head: informacion como titulo y  metadatos que no se ven, header es ya trabajar sobre el cuerpo de nuestra pagina web-->
+        <!-- Icono de café junto al título -->
+        <div class="header-icon">
+            <i class="fas fa-coffee cafe-icon"></i> <!-- Ícono de café -->
+        </div>
+        <h1>El rincón del café</h1>
+        <nav>
+            <a href="nuestra_historia.html">Nuestra historia</a> <!-- el # hace que el enlace no apunte a ningun lado aun-->
+            <a href="https://maps.app.goo.gl/GRLCshwduMa5LSVD7" target="_blank">Ubicación</a> <!-- Enlace directo a Google Maps -->
+            <a href="https://wa.me/+3875639938" target="_blank">Nuestro Contacto</a>
+        </nav>
+    </header>
+    <section id="historia">
+        <h2>La historia del café</h2>
+        <p>El café tiene su origen en Etiopía, donde, según la leyenda, un pastor llamado Kaldi notó que sus cabras tenían más energía tras comer los frutos rojos de un arbusto desconocido.</p>
+        <p>Con el tiempo, su consumo se expandió por Arabia, donde los monjes lo usaban para mantenerse despiertos en la oración. Más tarde, llegó a Europa y al resto del mundo, convirtiéndose en una de las bebidas más populares.</p>
+    </section>
+    <!-- Sección de Registro -->
+<section id="registro">
+    <h2>¡Regístrate para recibir nuestras novedades!</h2>
+    <form action="#" method="POST" class="form-registro">
+        <div class="form-group">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+        </div>
+        <div class="form-group">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required placeholder="Elige un nombre de usuario">
+        </div>
+        <div class="form-group">
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required placeholder="Elige una contraseña">
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+</section>
+     <!-- Sección Beneficios del Café -->
+     <section id="beneficios">
+        <h2>Beneficios del café</h2>
+        <div class="beneficios-container">
+            <div class="beneficio">
+                <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="Energía">
+                <h3>Aumenta la energía</h3>
+                <p>La cafeína estimula el sistema nervioso y ayuda a reducir la fatiga.</p>
+            </div>
+            <div class="beneficio">
+                <img src="https://cdn-icons-png.flaticon.com/512/3076/3076105.png" alt="Concentración">
+                <h3>Mejora la concentración</h3>
+                <p>El consumo moderado de café mejora la atención y la memoria.</p>
+            </div>
+            <div class="beneficio">
+                <img src="https://cdn-icons-png.flaticon.com/512/2820/2820473.png" alt="Antioxidantes">
+                <h3>Rico en antioxidantes</h3>
+                <p>Contiene compuestos que combaten el envejecimiento celular.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <img src="https://img.freepik.com/vector-gratis/mujer-pelo-largo-marron-camisa-rosa_90220-2940.jpg?t=st=1742511048~exp=1742514648~hmac=e212295241cb6d0c7a1addaa0016db2f4c52439df89385017d68aba8d5824a17&w=826" alt="Cliente 1">
+                <p>"El mejor café que he probado, siempre me da la energía que necesito en mi día a día."</p>
+                <h4>- María José Balut </h4>
+            </div>
+            <div class="testimonio">
+                <img src="https://img.freepik.com/vector-gratis/avatar-personaje-empresario-aislado_24877-60111.jpg?t=st=1742511024~exp=1742514624~hmac=4d3da24aa5aef4946cad00595f7f9ba5dcf17c856fdec6a68c6c6d7a5148fb5a&w=826" alt="Cliente 2">
+                <p>"Un lugar acogedor y el café es simplemente espectacular. ¡Recomendado al 100%!"</p>
+                <h4>- Matías Girola </h4>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <i class="fab fa-instagram"></i> Instagram: el_rincon_del_café
+        </p>
+        <p>&copy; 2025 - María Del Mar Pellicer Russo</p>
+    </footer>
+</body>
+</html>
+
